@@ -1,0 +1,8 @@
+{
+  "name": "creator-alpha-public-clean",
+  "version": "2.0.0",
+  "private": false,
+  "scripts": {
+    "build": "echo 'static'"
+  }
+}
