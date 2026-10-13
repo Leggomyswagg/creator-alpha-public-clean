@@ -1,26 +1,18 @@
-# CreatorAlpha Public Clean - Vercel Ready
+# CreatorAlpha static prototype
 
-This ZIP is ready to deploy directly to Vercel as static site.
+The repository contains a self-contained compiled React app in `index.html`, served as a static site. `npm run build` completes the static build; Vercel uses the included `vercel.json`.
 
-## Deploy from iPhone (No computer needed):
+## Available behavior
 
-### Option 1: Direct Vercel Deploy (Fastest - 2 min)
-1. Go to vercel.com/new in Safari (Request Desktop Website)
-2. Instead of importing GitHub, drag & drop this ZIP? Vercel doesn't support zip drag, so use GitHub method below.
+- The ranking starts empty; entering a domain generates two local example idea templates.
+- Profiles, saved ideas, categories, and checklist progress persist in this browser's local storage.
+- Saved playbook checkboxes update immediately in both the open playbook and vault. Completion updates the idea's status.
+- The iOS deployment button is removed from this public build.
 
-### Option 2: GitHub + Vercel from iPhone
-1. In Safari desktop mode, go to github.com/new
-2. Create repo: creator-alpha-public-clean (Public)
-3. Tap "uploading an existing file" → Upload index.html, package.json, vercel.json, README.md
-4. Commit
-5. Go to vercel.com/new → Import that repo → Deploy
-6. Add env var VITE_FOUNDER_KEY=leggomyswagg_secret_2026
+## Work required before a production service
 
-Live in 90 sec!
+The domain generator does not fetch or analyze a website. Its opportunity scores and revenue projections are simulated examples, not measured market data. Real scanning needs a backend and a defined source of evidence.
 
-Features:
-- No example rankings (starts empty)
-- No GitHub/Vercel buttons
-- Universal scanner works
-- iOS Deploy button removed in this build per request
-- Founder gated by env var
+The profile, plan, pricing, and founder-code controls are browser-only demonstrations. There is no authentication, subscription verification, or payment integration. Public client configuration cannot serve as a secret or enforce paid access; Vercel environment variables are not substituted into this precompiled static HTML. Add server-side authentication and entitlements before using these controls for a paid product.
+
+Editable component sources and the original build configuration are absent. Restore them before making broader product changes. Clearing browser data resets local saved work; there is no account synchronization.
